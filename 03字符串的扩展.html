@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script>
+        	/*$('#result').append(
+			  'There are <b>' + basket.count + '</b> ' +
+			  'items in your basket, ' +
+			  '<em>' + basket.onSale +
+			  '</em> are on sale!'
+			); 等同于
+			$('#result').append(`
+			  There are <b>${basket.count}</b> items
+			   in your basket, <em>${basket.onSale}</em>
+			  are on sale!
+			`);*/
+			/*alert`123`等同于alert(123);
+        	alert`123`; 标签模板*/
+        	document.getElementById('one').innerHTML=
+			function add(){
+				name:'张三',
+				age:20
+			}
+			var str=<p>name is ${name}<br>age is ${age}</p>
+			document.write(add(str));
+
+
+        	
+        </script>
+    </head>
+    <body>
+    <p id="one"></p>
+    <button onclick="function add()">点击</button>
+    </body>
+</html>
